@@ -6,8 +6,8 @@ netty:
     allocator:
       max-order: 3
 
-apiKey: "n5bBVszT9c6T0ZaPPAZ9SbFss"
-apiKeySecret: "qqkmybhffi4ia4UXPlEMWnTcyudFKvmBKWRd16DmhBVq6brn4b"
-accessToken: "1230355810670260235-ubmzdcXd7oaj3XMPtIquogSlvapBt3"
-accessTokenSecret: "bhR6sblEAtk6CNRTYFw1bhVZZEOY35O2jIsGbcCYBijHo"
+apiKey: ""
+apiKeySecret: ""
+accessToken: ""
+accessTokenSecret: ""
 
