@@ -24,6 +24,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
     runtimeOnly("ch.qos.logback:logback-classic")
     implementation("io.micronaut:micronaut-validation")
+    implementation("org.twitter4j", "twitter4j-core", "4.0.7")
 
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
 
