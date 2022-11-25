@@ -1,13 +1,16 @@
 micronaut:
   application:
     name: estudosMicronaut
+  server:
+    port: 8081
 netty:
   default:
     allocator:
       max-order: 3
 
-apiKey: ""
-apiKeySecret: ""
-accessToken: ""
-accessTokenSecret: ""
+apiKey: "5bXJquDNV0hKipR5m2vQbpjiv"
+apiKeySecret: "opG5q4btLXuodyUMpTzwH8c4rQiGa403ZpLI47NI0vZU8q43PP"
+accessToken: "1595873811773136896-dAs4mqrrQyKTT0gzXhKhUPxFdLTQwp"
+accessTokenSecret: "WE7V0nr5iRCPThXQO5lAIVMXzH4Qp1hGC7OVNuoa6tUw4"
+bearerToken: "AAAAAAAAAAAAAAAAAAAAACrLjgEAAAAA4kZZWVbCn%2FpM8Hd%2BYKwP1qY9UZg%3DKa0W5j2OUL5lM50nDc5300r04SJ2u5PBRSJDTvGvuUs5cvOFgr"
 
