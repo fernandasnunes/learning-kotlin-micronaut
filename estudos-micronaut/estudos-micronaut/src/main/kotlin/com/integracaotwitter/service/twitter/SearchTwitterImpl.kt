@@ -10,14 +10,10 @@ import twitter4j.conf.ConfigurationBuilder
 
 @Singleton
 class SearchTwitterImpl(
-    @Value("\${apiKey}")
+    @Value("\${twitter.apiKey}")
     private val apiKey: String,
-    @Value("\${apiKeySecret}")
+    @Value("\${twitter.apiKeySecret}")
     private val apiKeySecret: String,
-    @Value("\${accessToken}")
-    private val accessToken: String,
-    @Value("\${accessTokenSecret}")
-    private val accessTokenSecret: String
 ) : SearchTwitter {
     override fun searchTweets(): List<Any> {
 

@@ -25,7 +25,7 @@ dependencies {
     runtimeOnly("ch.qos.logback:logback-classic")
     implementation("io.micronaut:micronaut-validation")
     implementation("org.twitter4j", "twitter4j-core", "4.0.7")
-
+    implementation("io.reactivex.rxjava3:rxjava:3.1.5")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
 
 }
