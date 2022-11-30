@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Class-Path: resources/ classes/ libs/micronaut-kotlin-runtime-3.2.2.jar 
+ libs/micronaut-validation-3.7.4.jar libs/micronaut-http-client-3.7.4.ja
+ r libs/micronaut-http-server-netty-3.7.4.jar libs/micronaut-http-netty-
+ 3.7.4.jar libs/micronaut-http-server-3.7.4.jar libs/micronaut-websocket
+ -3.7.4.jar libs/micronaut-http-client-core-3.7.4.jar libs/micronaut-run
+ time-3.7.4.jar libs/micronaut-router-3.7.4.jar libs/micronaut-jackson-d
+ atabind-3.7.4.jar libs/micronaut-jackson-core-3.7.4.jar libs/micronaut-
+ json-core-3.7.4.jar libs/micronaut-http-3.7.4.jar libs/micronaut-contex
+ t-3.7.4.jar libs/micronaut-aop-3.7.4.jar libs/micronaut-buffer-netty-3.
+ 7.4.jar libs/micronaut-inject-3.7.4.jar libs/jakarta.annotation-api-2.1
+ .1.jar libs/jackson-datatype-jdk8-2.13.4.jar libs/jackson-datatype-jsr3
+ 10-2.13.4.jar libs/jackson-databind-2.13.4.2.jar libs/jackson-annotatio
+ ns-2.13.4.jar libs/jackson-core-2.13.4.jar libs/jackson-module-kotlin-2
+ .13.4.jar libs/kotlin-reflect-1.6.21.jar libs/kotlin-stdlib-jdk8-1.6.21
+ .jar libs/twitter4j-core-4.0.7.jar libs/rxjava-3.1.5.jar libs/dotenv-ko
+ tlin-6.4.0.jar libs/logback-classic-1.2.11.jar libs/javax.annotation-ap
+ i-1.3.2.jar libs/netty-handler-proxy-4.1.84.Final.jar libs/netty-codec-
+ http2-4.1.84.Final.jar libs/netty-codec-http-4.1.84.Final.jar libs/nett
+ y-codec-socks-4.1.84.Final.jar libs/netty-handler-4.1.84.Final.jar libs
+ /netty-codec-4.1.84.Final.jar libs/netty-transport-native-unix-common-4
+ .1.84.Final.jar libs/netty-transport-4.1.84.Final.jar libs/netty-buffer
+ -4.1.84.Final.jar libs/reactor-core-3.4.23.jar libs/micronaut-core-reac
+ tive-3.7.4.jar libs/reactive-streams-1.0.4.jar libs/micronaut-core-3.7.
+ 4.jar libs/slf4j-api-1.7.36.jar libs/snakeyaml-1.33.jar libs/validation
+ -api-2.0.1.Final.jar libs/kotlin-stdlib-jdk7-1.6.21.jar libs/kotlin-std
+ lib-1.6.21.jar libs/dotenv-java-2.3.1.jar libs/kotlin-stdlib-common-1.6
+ .21.jar libs/netty-resolver-4.1.84.Final.jar libs/netty-common-4.1.84.F
+ inal.jar libs/logback-core-1.2.11.jar libs/jakarta.inject-api-2.0.1.jar
+  libs/annotations-13.0.jar libs/config-1.4.2.jar
+Main-Class: com.example.ApplicationKt
+

@@ -1,6 +1,8 @@
 package com.integracaotwitter.service.interfaces
 
+import com.integracaotwitter.service.twitter.dto.TweetsResponse
+
 interface SearchTwitter {
 
-    fun searchTweets() : List<Any>
+    fun searchTweets(): ArrayList<TweetsResponse>
 }

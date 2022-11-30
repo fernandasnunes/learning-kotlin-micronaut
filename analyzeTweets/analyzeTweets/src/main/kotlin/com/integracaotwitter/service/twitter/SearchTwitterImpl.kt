@@ -1,9 +1,10 @@
 package com.integracaotwitter.service.twitter
-import io.github.cdimascio.dotenv.dotenv
 
 
 import com.integracaotwitter.service.interfaces.SearchTwitter
-import io.micronaut.context.annotation.Value
+import com.integracaotwitter.service.twitter.dto.TweetsResponse
+import com.integracaotwitter.service.twitter.mappers.TweetsResponseMapper
+import io.github.cdimascio.dotenv.dotenv
 import jakarta.inject.Singleton
 import twitter4j.Query
 import twitter4j.QueryResult
@@ -13,11 +14,14 @@ import java.nio.file.Paths
 
 @Singleton
 class SearchTwitterImpl(
+
 ) : SearchTwitter {
 
-    override fun searchTweets(): List<Any> {
+    override fun searchTweets(): ArrayList<TweetsResponse> {
+        val listTweets: ArrayList<TweetsResponse> = arrayListOf()
+
         val dotenv = dotenv {
-            directory = Paths.get("").toAbsolutePath().toString()+"/src/main/assets"
+            directory = Paths.get("").toAbsolutePath().toString() + "/src/main/assets"
             filename = "env"
         }
         val apiKeyTwitter = dotenv["apiKeyTwitter"]
@@ -32,7 +36,11 @@ class SearchTwitterImpl(
         twitter.oAuth2Token.accessToken
         val query = Query("copa")
         val result: QueryResult = twitter.search(query)
-        return result.tweets
+        val tweets = result.tweets
+        for (text in tweets) {
+            listTweets.add(TweetsResponseMapper().from(text = text.text))
+        }
+        return listTweets
     }
 
 }

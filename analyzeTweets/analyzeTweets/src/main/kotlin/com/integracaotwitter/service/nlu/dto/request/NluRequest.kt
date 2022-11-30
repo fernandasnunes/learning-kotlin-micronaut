@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty
 
 data class NluRequest(
     @JsonProperty("features")
-    val features: Features,
+    val features: Features?,
     @JsonProperty("text")
     val text: String
 )
