@@ -28,6 +28,7 @@ dependencies {
     implementation("io.reactivex.rxjava3:rxjava:3.1.5")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("io.github.cdimascio:dotenv-kotlin:6.4.0")
+
 }
 
 

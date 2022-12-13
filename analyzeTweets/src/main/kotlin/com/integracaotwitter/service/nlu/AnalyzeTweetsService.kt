@@ -6,6 +6,7 @@ import com.integracaotwitter.service.nlu.client.NluProvider
 import com.integracaotwitter.service.nlu.dto.response.NluResponse
 import com.integracaotwitter.service.nlu.mappers.NluRequestMapper
 import io.github.cdimascio.dotenv.dotenv
+import io.micronaut.http.BasicAuth
 import jakarta.inject.Singleton
 import java.nio.file.Paths
 
@@ -19,6 +20,6 @@ class AnalyzeTweetsService(private val searchTwitter: SearchTwitter, private val
         val apiKeyNlu = dotenv["apiKeyNlu"]
 
         val tweetsResponse = searchTwitter.searchTweets()
-        return nluProvider.analyze("2019-07-12","apiKeyNlu", NluRequestMapper().from(tweetsResponse))
+        return nluProvider.analyze("2019-07-12", BasicAuth("apikey", apiKeyNlu),NluRequestMapper().from(tweetsResponse))
     }
 }
