@@ -1,0 +1,22 @@
+micronaut:
+  application:
+    name: analyzeTweets
+  server:
+    port: 8083
+netty:
+  default:
+    allocator:
+      max-order: 3
+
+logger:
+  levels:
+    io:
+      micronaut:
+        http:
+          client: DEBUG
+nlu:
+  url: https://api.us-south.natural-language-understanding.watson.cloud.ibm.com/instances/b8e74164-9a33-4b9d-a46c-6ee96ec3c399
+  path: /v1/analyze
+
+
+
