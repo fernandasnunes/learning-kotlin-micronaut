@@ -15,10 +15,10 @@ interface NluProvider {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     fun analyze(
+        @Body nluRequest: NluRequest,
         @Header(name = ACCEPT, value = "application/json")
         @QueryValue version: String,
         basicAuth: BasicAuth,
-        @Body nluRequest: NluRequest
     ): NluResponse
 }
 

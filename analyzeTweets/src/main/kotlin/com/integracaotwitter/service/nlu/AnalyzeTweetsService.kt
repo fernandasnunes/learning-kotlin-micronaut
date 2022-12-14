@@ -20,6 +20,9 @@ class AnalyzeTweetsService(private val searchTwitter: SearchTwitter, private val
         val apiKeyNlu = dotenv["apiKeyNlu"]
 
         val tweetsResponse = searchTwitter.searchTweets()
-        return nluProvider.analyze("2019-07-12", BasicAuth("apikey", apiKeyNlu),NluRequestMapper().from(tweetsResponse))
+        val text = NluRequestMapper().from(tweetsResponse)
+
+        return nluProvider.analyze(nluRequest = text, "2019-07-12", BasicAuth("apikey", apiKeyNlu))
+
     }
 }
